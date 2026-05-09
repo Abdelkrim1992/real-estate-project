@@ -1,5 +1,5 @@
 import React from 'react';
-import { properties } from '../data';
+import { properties } from '@/data/properties';
 import PropertyCard from './PropertyCard';
 
 const PropertyGrid: React.FC = () => (

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { faqs } from '../data';
+import { faqs } from '@/data/properties';
 
 const FAQSection: React.FC = () => {
   const [openId, setOpenId] = useState<number>(1);

@@ -7,8 +7,8 @@ import HowItWorksSection from './HowItWorksSection';
 import AmenitiesSection from './AmenitiesSection';
 import ServicesSection from './ServicesSection';
 import Footer from '../components/common/Footer';
-import FAQSection from '@/pages/properties/components/FAQSection';
-import CTABanner from '@/pages/properties/components/CTABanner';
+import FAQSection from '@/components/properties/components/FAQSection';
+import CTABanner from '@/components/properties/components/CTABanner';
 
 export default function Home() {
   return (

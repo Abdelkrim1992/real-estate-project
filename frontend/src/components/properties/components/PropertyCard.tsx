@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-import { Property } from '../data';
+import { Property } from '@/data/properties';
 
 interface PropertyCardProps {
   property: Property;

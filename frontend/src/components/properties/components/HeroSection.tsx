@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { featuredProperty } from '../data';
+import { featuredProperty } from '@/data/properties';
 
 const HeroSection: React.FC = () => {
   return (

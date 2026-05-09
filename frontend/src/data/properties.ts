@@ -21,7 +21,7 @@ export const featuredProperty: Property = {
   id: 0,
   name: 'Azure heights',
   description:
-    'Luxury waterfront apartment offering modern interiors, panoramic views, smart amenities,\u2026',
+    'Luxury waterfront apartment offering modern interiors, panoramic views, smart amenities,…',
   type: 'For Sale',
   image: '/images/img_component_1.svg',
   beds: 4,
@@ -34,7 +34,7 @@ export const properties: Property[] = [
     id: 1,
     name: 'Lakeside manor',
     description:
-      'Elegant lakeside home offering privacy, spacious interiors, and tranquil residential\u2026',
+      'Elegant lakeside home offering privacy, spacious interiors, and tranquil residential…',
     type: 'For Sale',
     image: '/images/img_4033599021.svg',
     beds: 5,
@@ -45,7 +45,7 @@ export const properties: Property[] = [
     id: 2,
     name: 'Palm residence',
     description:
-      'Elegant city residence designed for premium living, strong rental demand, and\u2026',
+      'Elegant city residence designed for premium living, strong rental demand, and…',
     type: 'For Rent',
     image: '/images/img_3354701611.svg',
     beds: 3,
@@ -89,7 +89,7 @@ export const properties: Property[] = [
     id: 6,
     name: 'Nova square',
     description:
-      'Contemporary city apartment built for convenience, efficiency, and strong rental\u2026',
+      'Contemporary city apartment built for convenience, efficiency, and strong rental…',
     type: 'For Rent',
     image: '/images/img_social_link.svg',
     beds: 3,
