@@ -1,0 +1,20 @@
+<svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"><defs><mask id="mask8_56_893" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="-0.5898000000001957" width="18" height="19">
+<g id="div.framer-JBKgu:mask_2" clip-path="url(#clip79_56_893)">
+<g id="Component 1_25">
+<path id="Vector_2" d="M3.75,9.0002h10.5M9,14.2502l5.25,-5.25l-5.25,-5.25" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</mask><clipPath id="clip79_56_893">
+<rect width="18" height="18" fill="white" transform="translate(0, 0.0001999999999497959)"/>
+</clipPath></defs><g id="div.framer-JBKgu:mask-group_2">
+<mask id="mask8_56_893" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="453" y="3393" width="18" height="19">
+<g id="div.framer-JBKgu:mask_2" clip-path="url(#clip79_56_893)">
+<g id="Component 1_25">
+<path id="Vector_2" d="M456.75 3402.59H467.25M462 3407.84L467.25 3402.59L462 3397.34" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</mask>
+<g mask="url(#mask8_56_893)">
+<rect id="div.framer-JBKgu_2" x="0" y="0.0001999999999497959" width="18" height="18" fill="white"/>
+</g>
+</g></svg>

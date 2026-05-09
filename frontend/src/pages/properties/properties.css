@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* ============================================================
+   Estatix Properties Page – global tokens
+   ============================================================ */
+:root {
+  --color-bg: #f2f1e8;
+  --color-cream: #fffff2;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-muted: #5b5b5b;
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Mona Sans', 'Inter', sans-serif;
+}
+
+/* Large brand watermark text – gradient fade effect */
+.estatix-brand-text {
+  font-family: var(--font-heading);
+  font-size: clamp(120px, 26vw, 374px);
+  font-weight: 500;
+  letter-spacing: -14.98px;
+  line-height: 0.8;
+  color: #000;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%);
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+/* Stat pill */
+.stat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.56px;
+  line-height: 16.8px;
+  white-space: nowrap;
+}
+
+.stat-pill-dark {
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  color: #000;
+}
+
+.stat-pill-light {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+/* Property card gradient overlay */
+.card-gradient {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 42.88%, rgba(0, 0, 0, 1) 100%);
+}
+
+/* Mobile hamburger nav drawer */
+.mobile-nav {
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* FAQ accordion transition */
+.faq-answer {
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.25s ease;
+}
+
+/* CTA overlay */
+.cta-overlay {
+  background: rgba(0, 0, 0, 0.10);
+  backdrop-filter: blur(0px);
+}
+
+/* Hover transitions */
+.nav-link {
+  transition: opacity 0.15s ease;
+}
+.nav-link:hover {
+  opacity: 1 !important;
+}
+
+.property-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+.property-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+}
+
+/* Button hover */
+.btn-black {
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+.btn-black:hover {
+  background-color: #1a1a1a;
+}
+.btn-black:active {
+  transform: scale(0.98);
+}
+
+.btn-outline-white {
+  transition: background-color 0.15s ease;
+}
+.btn-outline-white:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Social icon hover */
+.social-icon {
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+.social-icon:hover {
+  opacity: 0.75;
+  transform: translateY(-2px);
+}
+
+/* FAQ row hover */
+.faq-row {
+  transition: background-color 0.15s ease;
+}
+.faq-row:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}

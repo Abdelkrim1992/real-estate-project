@@ -1,0 +1,312 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ===== PRIMARY COLORS ===== */
+    /* Main brand and accent colors */
+    --primary-background: #000000;
+    --primary-foreground: #ffffff;
+    
+    /* ===== SECONDARY COLORS ===== */
+    /* Supporting background colors */
+    --secondary-background: #f2f1e8;
+    --secondary-light: #fffff2;
+    --secondary-white: #ffffff;
+    
+    /* ===== TEXT COLORS ===== */
+    /* Text hierarchy colors */
+    --text-primary: #000000;
+    --text-secondary: #5b5b5b;
+    --text-inverse: #ffffff;
+    
+    /* ===== BACKGROUND COLORS ===== */
+    /* Surface and container backgrounds */
+    --bg-main: #f2f1e8;
+    --bg-cream: #fffff2;
+    --bg-white: #ffffff;
+    --bg-black: #000000;
+    --bg-overlay-light: #00000019;
+    --bg-overlay-white: #ffffff19;
+    --bg-overlay-white-medium: #ffffff33;
+    
+    /* ===== BORDER COLORS ===== */
+    /* Border and divider colors */
+    --border-light: #00000019;
+    --border-white: #ffffff3f;
+    
+    /* ===== COMPONENT SPECIFIC COLORS ===== */
+    /* Header Component */
+    --header-background: #f2f1e8;
+    --header-text: #000000;
+    
+    /* Button Component */
+    --button-primary-bg: #000000;
+    --button-primary-text: #ffffff;
+    --button-secondary-bg: #fffff2;
+    --button-secondary-text: #000000;
+    --button-ghost-bg: #ffffff19;
+    --button-ghost-text: #ffffff;
+    --button-border: #ffffff3f;
+    
+    /* Link Component */
+    --link-primary: #000000;
+    --link-secondary: #5b5b5b;
+    --link-inverse: #ffffff;
+    
+    /* Card Component */
+    --card-background: #ffffff;
+    --card-border: #00000019;
+    
+    /* Line/Divider Component */
+    --divider-color: #ffffff33;
+    
+    /* Icon Button Component */
+    --icon-button-bg-cream: #fffff2;
+    --icon-button-bg-light: #f2f1e8;
+    --icon-button-border: #00000019;
+    
+    /* Expand/Collapse Component */
+    --expand-border: #00000019;
+    --expand-text: #000000;
+    --expand-content: #5b5b5b;
+    
+    /* ===== TYPOGRAPHY VARIABLES ===== */
+    /* Font Sizes */
+    --font-size-xs: 14px;
+    --font-size-sm: 16px;
+    --font-size-base: 18px;
+    --font-size-md: 19px;
+    --font-size-lg: 20px;
+    --font-size-xl: 22px;
+    --font-size-2xl: 26px;
+    --font-size-3xl: 28px;
+    --font-size-4xl: 30px;
+    --font-size-5xl: 32px;
+    --font-size-6xl: 44px;
+    --font-size-7xl: 48px;
+    --font-size-8xl: 56px;
+    --font-size-hero: 374px;
+    
+    /* Font Weights */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    
+    /* Line Heights */
+    --line-height-xs: 17px;
+    --line-height-sm: 20px;
+    --line-height-base: 22px;
+    --line-height-md: 24px;
+    --line-height-lg: 25px;
+    --line-height-xl: 32px;
+    --line-height-2xl: 40px;
+    --line-height-3xl: 43px;
+    --line-height-4xl: 44px;
+    --line-height-5xl: 52px;
+    --line-height-6xl: 56px;
+    --line-height-7xl: 63px;
+    --line-height-hero: 528px;
+    
+    /* Font Families */
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Mona Sans', sans-serif;
+    
+    /* ===== SPACING VARIABLES ===== */
+    /* Margin Values */
+    --margin-xxs: 6px;
+    --margin-xs: 8px;
+    --margin-sm: 10px;
+    --margin-md: 14px;
+    --margin-base: 16px;
+    --margin-lg: 18px;
+    --margin-xl: 22px;
+    --margin-2xl: 24px;
+    --margin-3xl: 26px;
+    --margin-4xl: 32px;
+    --margin-5xl: 36px;
+    --margin-6xl: 56px;
+    --margin-7xl: 64px;
+    --margin-8xl: 80px;
+    --margin-9xl: 88px;
+    --margin-10xl: 90px;
+    --margin-11xl: 126px;
+    --margin-12xl: 128px;
+    --margin-13xl: 144px;
+    --margin-14xl: 246px;
+    --margin-15xl: 256px;
+    
+    /* Padding Values */
+    --padding-xxs: 4px;
+    --padding-xs: 6px;
+    --padding-sm: 8px;
+    --padding-md: 10px;
+    --padding-base: 12px;
+    --padding-lg: 14px;
+    --padding-xl: 16px;
+    --padding-2xl: 18px;
+    --padding-3xl: 20px;
+    --padding-4xl: 22px;
+    --padding-5xl: 24px;
+    --padding-6xl: 26px;
+    --padding-7xl: 28px;
+    --padding-8xl: 30px;
+    --padding-9xl: 32px;
+    --padding-10xl: 34px;
+    --padding-11xl: 46px;
+    --padding-12xl: 56px;
+    --padding-13xl: 64px;
+    --padding-14xl: 144px;
+    
+    /* Gap Values */
+    --gap-xxs: 4px;
+    --gap-xs: 6px;
+    --gap-sm: 8px;
+    --gap-md: 10px;
+    --gap-base: 12px;
+    --gap-lg: 14px;
+    --gap-xl: 16px;
+    --gap-2xl: 18px;
+    --gap-3xl: 20px;
+    --gap-4xl: 24px;
+    --gap-5xl: 26px;
+    --gap-6xl: 28px;
+    --gap-7xl: 30px;
+    --gap-8xl: 32px;
+    --gap-9xl: 44px;
+    --gap-10xl: 52px;
+    --gap-11xl: 56px;
+    --gap-12xl: 64px;
+    --gap-13xl: 84px;
+    --gap-14xl: 104px;
+    --gap-15xl: 118px;
+    --gap-16xl: 148px;
+    --gap-17xl: 274px;
+    --gap-18xl: 392px;
+    
+    /* ===== BORDER RADIUS VARIABLES ===== */
+    /* Border Radius Values */
+    --radius-xs: 2px;
+    --radius-sm: 3px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 14px;
+    --radius-2xl: 16px;
+    --radius-3xl: 18px;
+    --radius-4xl: 20px;
+    --radius-5xl: 22px;
+    --radius-6xl: 24px;
+    
+    /* ===== BORDER WIDTH VARIABLES ===== */
+    /* Border Width Values */
+    --border-width-thin: 1px;
+    
+    /* ===== LAYOUT VARIABLES ===== */
+    /* Width Percentages */
+    --width-xs: 3%;
+    --width-sm: 16%;
+    --width-md: 30%;
+    --width-lg: 32%;
+    --width-xl: 34%;
+    --width-2xl: 38%;
+    --width-3xl: 44%;
+    --width-4xl: 46%;
+    --width-5xl: 50%;
+    --width-6xl: 54%;
+    --width-7xl: 64%;
+    --width-8xl: 70%;
+    --width-9xl: 72%;
+    --width-10xl: 74%;
+    --width-11xl: 82%;
+    --width-12xl: 84%;
+    --width-13xl: 86%;
+    --width-14xl: 92%;
+    --width-full: 100%;
+    
+    /* Fixed Width Values */
+    --width-fixed-xs: 5px;
+    --width-fixed-sm: 6px;
+    --width-fixed-md: 10px;
+    --width-fixed-lg: 16px;
+    --width-fixed-xl: 18px;
+    --width-fixed-2xl: 22px;
+    --width-fixed-3xl: 28px;
+    --width-fixed-4xl: 36px;
+    --width-fixed-5xl: 42px;
+    --width-fixed-6xl: 146px;
+    --width-fixed-7xl: 154px;
+    --width-fixed-8xl: 290px;
+    --width-fixed-9xl: 328px;
+    --width-fixed-10xl: 330px;
+    --width-fixed-11xl: 370px;
+  }
+}
+
+/* Custom utility classes for common patterns */
+@layer components {
+  /* Container with consistent padding */
+  .container-padding {
+    @apply px-4 md:px-6 lg:px-8;
+  }
+  
+  /* Section spacing */
+  .section-spacing {
+    @apply py-12 md:py-16 lg:py-24;
+  }
+  
+  /* Card hover effect */
+  .card-hover {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+  
+  /* Button base styles */
+  .btn-base {
+    @apply inline-flex items-center justify-center font-medium transition-colors duration-200;
+  }
+}
+
+/* Scrollbar hide utility */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Custom animations */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

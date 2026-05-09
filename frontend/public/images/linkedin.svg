@@ -1,0 +1,25 @@
+<svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"><defs><mask id="path-317-inside-30_56_893" fill="white">
+<path d="M0,18.0002c0,-9.94 8.059,-18 18,-18c9.941,0 18,8.06 18,18c0,9.94 -8.059,18 -18,18c-9.941,0 -18,-8.06 -18,-18z"/>
+</mask><clipPath id="clip84_56_893">
+<rect x="0" y="0.0001999999999497959" width="36" height="36" rx="18" fill="white"/>
+</clipPath><clipPath id="clip85_56_893">
+<rect width="20" height="20" fill="white" transform="translate(8, 8.00019999999995)"/>
+</clipPath></defs><g id="Social link_2">
+<g clip-path="url(#clip84_56_893)">
+<g id="Component 1_27" clip-path="url(#clip85_56_893)">
+<g id="4033599021">
+<path id="uLIbokj1X" d="M11.125,25.5002c-0.345,0 -0.625,-0.28 -0.625,-0.63v-13.75c0,-0.34 0.28,-0.62 0.625,-0.62h13.75c0.345,0 0.625,0.28 0.625,0.62v13.75c0,0.35 -0.28,0.63 -0.625,0.63z" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="wcL4Xtw6S" d="M17.375,16.7502v5" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="haFqKG9T6" d="M14.875,16.7502v5" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="ldXP7NTX2" d="M17.375,18.9402c0,-1.21 0.979,-2.19 2.187,-2.19c1.209,0 2.188,0.98 2.188,2.19v2.81" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="M86o3vn0T" d="M13.938,14.5602c0,-0.52 0.419,-0.94 0.937,-0.94c0.517,0 0.937,0.42 0.937,0.94c0,0.52 -0.42,0.94 -0.937,0.94c-0.518,0 -0.937,-0.42 -0.937,-0.94z" fill="black"/>
+</g>
+</g>
+<g id="::after_30">
+<mask id="path-317-inside-30_56_893" fill="white">
+<path d="M190 3580.59C190 3570.65 198.059 3562.59 208 3562.59C217.941 3562.59 226 3570.65 226 3580.59C226 3590.53 217.941 3598.59 208 3598.59C198.059 3598.59 190 3590.53 190 3580.59Z"/>
+</mask>
+<path d="M0,18.0002M36,18.0002M36,18.0002M0,18.0002M18,0.0002M36,18.0002M18,36.0002M0,18.0002M18,36.0002v-1c-9.389,0 -17,-7.61 -17,-17h-1h-1c0,10.49 8.507,19 19,19zM36,18.0002h-1c0,9.39 -7.611,17 -17,17v1v1c10.493,0 19,-8.51 19,-19zM18,0.0002v1c9.389,0 17,7.61 17,17h1h1c0,-10.49 -8.507,-19 -19,-19zM18,0.0002v-1c-10.493,0 -19,8.51 -19,19h1h1c0,-9.39 7.611,-17 17,-17z" fill="black" fill-opacity="0.1" mask="url(#path-317-inside-30_56_893)"/>
+</g>
+</g>
+</g></svg>
