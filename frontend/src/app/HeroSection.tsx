@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 interface Feature {
   icon: React.ReactNode;
@@ -65,7 +66,12 @@ const HeroSection = () => {
 
       <div className="relative z-10 w-full flex-1 flex flex-col max-w-[1200px] mx-auto px-6 pt-10 py-8 md:py-12 lg:py-16">
         {/* Hero Content */}
-        <div className="flex flex-col gap-[18px] w-full md:w-3/4 lg:w-[44%] mt-auto mb-20 md:mb-32 lg:mb-40 flex-1 justify-end">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex flex-col gap-[18px] w-full md:w-3/4 lg:w-[44%] mt-auto mb-20 md:mb-32 lg:mb-40 flex-1 justify-end"
+        >
           {/* Badge */}
           <div className="flex flex-row items-center gap-2">
             <div className="w-[6px] h-[6px] bg-white rounded-[3px] flex-shrink-0" />
@@ -109,10 +115,15 @@ const HeroSection = () => {
               />
             </Link>
           </div>
-        </div>
+        </motion.div>
 
         {/* Features Row */}
-        <div className="flex flex-col sm:flex-row flex-wrap md:flex-nowrap gap-[10px] md:gap-[20px] lg:gap-[40px] items-start">
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="flex flex-col sm:flex-row flex-wrap md:flex-nowrap gap-[10px] md:gap-[20px] lg:gap-[40px] items-start"
+        >
           {features.map((feature, index) => (
             <div key={index} className="flex flex-row items-center gap-2 w-full sm:w-auto">
               {feature.icon}
@@ -121,7 +132,7 @@ const HeroSection = () => {
               </span>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

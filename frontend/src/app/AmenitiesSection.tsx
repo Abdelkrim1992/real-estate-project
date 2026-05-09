@@ -1,5 +1,6 @@
 'use client';
-import Image from'next/image';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 interface Amenity {
   icon: string;
@@ -78,23 +79,40 @@ const AmenitiesSection = () => {
           </div>
         </div>
 
-        {/* Images Row */}
-        <div className="flex flex-row gap-[18px] mb-8 md:mb-12 overflow-x-auto pb-4 scrollbar-hide">
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className={`relative flex-shrink-0 rounded-[16px] overflow-hidden ${
-                index === 0 ? 'w-[290px]' : index === 3 ? 'w-[146px]' : 'w-[330px]'
-              } h-[370px]`}
-            >
-              <Image
-                src={image}
-                alt={`Amenity image ${index + 1}`}
-                fill
-                className="object-cover"
-              />
-            </div>
-          ))}
+        {/* Automatic Moving Images Row */}
+        <div className="relative w-full overflow-hidden mb-8 md:mb-12 py-4">
+          <motion.div 
+            className="flex flex-row gap-[18px] w-fit"
+            animate={{
+              x: [0, -1168], // Precise width of one set of images + gap
+            }}
+            transition={{
+              x: {
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 25,
+                ease: "linear",
+              },
+            }}
+          >
+            {/* Double the images for seamless looping */}
+            {[...images, ...images].map((image, index) => (
+              <div
+                key={index}
+                className={`relative flex-shrink-0 rounded-[16px] overflow-hidden ${
+                  index % images.length === 0 ? 'w-[290px]' : index % images.length === 3 ? 'w-[146px]' : 'w-[330px]'
+                } h-[370px] shadow-lg hover:shadow-xl transition-shadow duration-300`}
+              >
+                <Image
+                  src={image}
+                  alt={`Amenity image ${index + 1}`}
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+              </div>
+            ))}
+          </motion.div>
         </div>
 
         {/* Amenities Grid */}

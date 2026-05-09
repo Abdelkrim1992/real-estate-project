@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
           </a>
 
           {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-[42px]">
+          <div className="hidden md:flex items-center gap-[32px]">
             <ul className="flex items-center gap-5 list-none m-0 p-0">
               {NAV_LINKS.map((link) => (
                 <li key={link.label}>
@@ -47,12 +47,14 @@ const Navbar: React.FC = () => {
                 </li>
               ))}
             </ul>
-            <a
-              href="#contact"
-              className="btn-black inline-flex items-center justify-center bg-black text-white font-inter text-base font-medium tracking-[-0.32px] rounded-full px-[18px] py-[10px] no-underline"
-            >
-              Contact us
-            </a>
+            <div className="flex items-center gap-4 border-l border-black/10 pl-8">
+              <a
+                href="/contact"
+                className="btn-black inline-flex items-center justify-center bg-black text-white font-inter text-base font-medium tracking-[-0.32px] rounded-full px-[18px] py-[10px] no-underline hover:bg-black/80 transition-colors"
+              >
+                Contact Us
+              </a>
+            </div>
           </div>
 
           {/* Mobile hamburger */}
@@ -91,13 +93,22 @@ const Navbar: React.FC = () => {
               </li>
             ))}
           </ul>
-          <a
-            href="#contact"
-            onClick={() => setMenuOpen(false)}
-            className="btn-black mt-5 inline-flex items-center justify-center bg-black text-white font-inter text-base font-medium tracking-[-0.32px] rounded-full px-[18px] py-[10px] no-underline"
-          >
-            Contact us
-          </a>
+          <div className="flex flex-col gap-3 mt-6 pt-6 border-t border-black/5">
+            <a
+              href="/login"
+              onClick={() => setMenuOpen(false)}
+              className="flex items-center justify-center font-inter text-base font-medium tracking-[-0.32px] text-black border border-black/10 rounded-full py-3"
+            >
+              Sign in
+            </a>
+            <a
+              href="/register"
+              onClick={() => setMenuOpen(false)}
+              className="flex items-center justify-center bg-black text-white font-inter text-base font-medium tracking-[-0.32px] rounded-full py-3"
+            >
+              Register
+            </a>
+          </div>
         </div>
       )}
     </header>

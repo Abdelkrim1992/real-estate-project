@@ -10,19 +10,34 @@ import Footer from '../components/common/Footer';
 import FAQSection from '@/components/properties/components/FAQSection';
 import CTABanner from '@/components/properties/components/CTABanner';
 
+import { ScrollReveal } from '@/components/common/ScrollReveal';
+
 export default function Home() {
   return (
     <>
-      <main>
+      <main className='bg-background-main'>
         <HeroSection />
-        <IntroSection />
-        <StatsSection />
-        <PropertiesSection />
-        {/* <HowItWorksSection /> */}
-        <AmenitiesSection />
-        <ServicesSection />
-        <FAQSection />
-        <CTABanner />
+        <ScrollReveal>
+          <IntroSection />
+        </ScrollReveal>
+        <ScrollReveal>
+          <StatsSection />
+        </ScrollReveal>
+        <ScrollReveal>
+          <PropertiesSection />
+        </ScrollReveal>
+        <ScrollReveal>
+          <AmenitiesSection />
+        </ScrollReveal>
+        <ScrollReveal>
+          <ServicesSection />
+        </ScrollReveal>
+        <ScrollReveal>
+          <FAQSection />
+        </ScrollReveal>
+        <ScrollReveal>
+          <CTABanner />
+        </ScrollReveal>
       </main>
       <Footer />
     </>
